@@ -9,6 +9,8 @@
     <!-- core:css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/app/assets/vendors/core/core.css">
     <!-- endinject -->
+    <!-- plugin css -->
+    <?php echo $this->renderSection('css'); ?>
     <!-- end plugin css for this page -->
     <!-- inject:css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/app/assets/fonts/feather-font/css/iconfont.css">
@@ -18,7 +20,6 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>/app/assets/css/demo_1/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>/app/assets/images/favicon.png" />
-    <?php echo $this->renderSection('css'); ?>
 </head>
 
 <body>
@@ -368,14 +369,12 @@
     <script src="<?php echo base_url(); ?>/app/assets/vendors/core/core.js"></script>
     <!-- endinject -->
     <!-- plugin js for this page -->
-    <script src="<?php echo base_url(); ?>/app/assets/vendors/jquery.flot/jquery.flot.js"></script>
-    <script src="<?php echo base_url(); ?>/app/assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+    <?php echo $this->renderSection('js'); ?>
     <!-- end plugin js for this page -->
     <!-- inject:js -->
     <script src="<?php echo base_url(); ?>/app/assets/vendors/feather-icons/feather.min.js"></script>
     <script src="<?php echo base_url(); ?>/app/assets/js/template.js"></script>
     <!-- endinject -->
-    <?php echo $this->renderSection('js'); ?>
 </body>
 
 </html>

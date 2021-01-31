@@ -19,81 +19,120 @@ class Pendukung extends BaseController
 
     public function index()
     {
-        // Data Pelaporan
-        $pelaporan          = $this->pelaporan->orderBy('id', 'desc')->get()->getResultArray();
-
-        // Check Pelaporan
-        if($pelaporan != null)
+        if( $this->request->getVar('jenis') == null )
         {
-            $response = [
-                'status'    => true,
-                'code'      => 200,
-                'message'   => 'Data Tersedia',
-                'data'      => $pelaporan,
-            ];
+            // Data pendukung
+            $pendukung          = $this->pendukung->orderBy('id', 'desc')->get()->getResultArray();
+    
+            // Check pendukung
+            if($pendukung != null)
+            {
+                $response = [
+                    'status'    => true,
+                    'code'      => 200,
+                    'message'   => 'Data Tersedia',
+                    'data'      => $pendukung,
+                ];
+            }
+            else
+            {
+                $response = [
+                    'status'    => false,
+                    'code'      => 404,
+                    'message'   => 'Data Belum Tersedia',
+                    'data'      => null,
+                ];
+            }
+    
+            // Return
+            return $this->response->setJSON($response);
         }
         else
         {
-            $response = [
-                'status'    => false,
-                'code'      => 404,
-                'message'   => 'Data Belum Tersedia',
-                'data'      => null,
-            ];
+            // Data pendukung
+            $pendukung          = $this->pendukung->where(['jenis' => $this->request->getVar('jenis')])->orderBy('id', 'desc')->get()->getResultArray();
+    
+            // Check pendukung
+            if($pendukung != null)
+            {
+                $response = [
+                    'status'    => true,
+                    'code'      => 200,
+                    'message'   => 'Data Tersedia',
+                    'data'      => $pendukung,
+                ];
+            }
+            else
+            {
+                $response = [
+                    'status'    => false,
+                    'code'      => 404,
+                    'message'   => 'Data Belum Tersedia',
+                    'data'      => null,
+                ];
+            }
+    
+            // Return
+            return $this->response->setJSON($response);
         }
-
-        // Return
-        return $this->response->setJSON($response);
     }
 
     public function store()
     {
-
-    }
-
-    public function update($idPendukung = null)
-    {
-
-    }
-
-    public function delete($idPendukung = null)
-    {
-
-    }
-
-    public function lapor()
-    {
         // Request
         $post       = $this->request->getVar();
 
-        // Request Image
-        $image      = $this->request->getFile('image');
-
-        // Change Name
-        $imageName  = uuidv4().".".$image->getClientExtension();
-
-        // Insert Table Pelaporan
-        $dataPelaporan = [
-            'id_user'       => $post['id_user'],
-            'image'         => $imageName,
+        // Insert Table pendukung
+        $datapendukung = [
+            'nama'          => $post['nama'],
+            'alamat'        => $post['alamat'],
             'latitude'      => $post['latitude'],
             'longitude'     => $post['longitude'],
-            'lokasi'        => $post['lokasi'],
+            'jenis'         => $post['jenis'], // Rumah Sakit/Kepolisian
         ];
-        $this->pelaporan->insert($dataPelaporan);
-
-        // Move File to Folder
-        $image->move('/assets/pelaporan/', $imageName);
+        $this->pendukung->insert($datapendukung);
 
         // Response
-        $response   = [
+        $response = [
             'status'    => true,
             'code'      => 200,
-            'message'   => 'Berhasil Masuk',
-            'data'      => $user,
+            'message'   => 'Berhasil Menambahkan Data',
+            'data'      => $datapendukung,
         ];
 
         // Return
         return $this->response->setJSON($response);
+    }
+
+    public function update($idPendukung = null)
+    {
+        // Request
+        $post       = $this->request->getVar();
+
+        // Insert Table pendukung
+        $datapendukung = [
+            'nama'          => $post['nama'],
+            'alamat'        => $post['alamat'],
+            'latitude'      => $post['latitude'],
+            'longitude'     => $post['longitude'],
+            'jenis'         => $post['jenis'], // Rumah Sakit/Kepolisian
+        ];
+        $this->pendukung->set($datapendukung)->where(['id' => $idPendukung])->update($datapendukung);
+
+        // Response
+        $response = [
+            'status'    => true,
+            'code'      => 200,
+            'message'   => 'Berhasil Mengubah Data',
+            'data'      => $datapendukung,
+        ];
+
+        // Return
+        return $this->response->setJSON($response);
+    }
+
+    public function delete($idPendukung = null)
+    {
+        $this->pelaporan->where(['id' => $idPendukung])->delete();
     }
 }

@@ -34,3 +34,197 @@ CRITICAL - 2021-01-31 03:28:38 --> Call to a member function orderBy() on null
 #2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #4 {main}
+CRITICAL - 2021-01-31 03:31:33 --> Call to a member function orderBy() on null
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukung->index()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukung))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-31 03:31:40 --> Call to a member function orderBy() on null
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukung->index()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukung))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-31 03:31:49 --> Call to a member function orderBy() on null
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukung->index()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukung))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-31 03:31:58 --> Call to a member function orderBy() on null
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukung->index()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukung))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-31 03:32:06 --> Call to a member function orderBy() on null
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukungs->index()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukungs))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-31 03:32:23 --> Call to a member function orderBy() on null
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukung->index()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukung))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-01-31 03:32:49 --> Undefined property: App\Controllers\Api\Pendukung::$pelaporan
+#0 C:\laragon\www\sinauflu\app\Controllers\Api\Pendukung.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 23, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pendukung->index()
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pendukung))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-31 04:33:32 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(21): view('pendukung/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:34:09 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(21): view('pendukung/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:34:10 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(21): view('pendukung/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:34:11 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(21): view('pendukung/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:34:12 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\index.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(21): view('pendukung/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:39:32 --> Invalid file: pendukung/create.php
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pendukung/creat...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/creat...', Array, true)
+#2 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(37): view('pendukung/creat...', Array)
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->create()
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-31 04:48:21 --> Undefined index: jenis
+#0 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 51, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->store()
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-31 04:50:05 --> Invalid file: pendukung/edit.php
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pendukung/edit....')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#2 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(66): view('pendukung/edit', Array)
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('1')
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-31 04:50:17 --> Undefined property: App\Controllers\Pendukung::$pelaporan
+#0 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 91, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->delete('3')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-31 04:50:29 --> Invalid file: pendukung/edit.php
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pendukung/edit....')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#2 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(66): view('pendukung/edit', Array)
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-01-31 04:51:34 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 18, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(66): view('pendukung/edit', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:51:35 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 18, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(66): view('pendukung/edit', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:51:59 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 18, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(69): view('pendukung/edit', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:52:00 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 18, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(69): view('pendukung/edit', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:52:00 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 18, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(69): view('pendukung/edit', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-01-31 04:52:01 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pendukung\edit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 18, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pendukung/edit', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pendukung.php(69): view('pendukung/edit', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pendukung->edit('2')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pendukung))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}

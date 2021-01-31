@@ -245,6 +245,59 @@
                                 </tr>
                             </tbody>
                         </table>
+                        
+                        <hr>
+                        <h4>Pendukung - Data Rumah Sakit dan Kepolisian</h4>
+                        <p>Url: https://pmb.masuk.id/sin/api/pendukung/</p>
+                        <p>Method: POST</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Key</th>
+                                    <th scope="col">Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>nama</th>
+                                    <td>Integer (Pake Sharedpreferences after Login)</td>
+                                </tr>
+                                <tr>
+                                    <th>alamat</th>
+                                    <td>String</td>
+                                </tr>
+                                <tr>
+                                    <th>jenis</th>
+                                    <td>String</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4>Pendukung - Data Rumah Sakit dan Kepolisian (Where)</h4>
+                        <p>Url: https://pmb.masuk.id/sin/api/pendukung?jenis={jenis}</p>
+                        <p>Method: POST</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Key</th>
+                                    <th scope="col">Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>nama</th>
+                                    <td>Integer (Pake Sharedpreferences after Login)</td>
+                                </tr>
+                                <tr>
+                                    <th>alamat</th>
+                                    <td>String</td>
+                                </tr>
+                                <tr>
+                                    <th>jenis</th>
+                                    <td>Where = 'RS' / 'POLISI'</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
