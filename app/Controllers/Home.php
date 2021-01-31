@@ -12,7 +12,10 @@ class Home extends BaseController
 	
 	public function index()
 	{
-		return view('tutorial');
+		$data = [
+			'title'		=> 'Tutorial',
+		];
+		return view('tutorial', $data);
 	}
 
 	//--------------------------------------------------------------------

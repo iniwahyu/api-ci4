@@ -301,3 +301,14 @@ CRITICAL - 2021-01-31 07:18:52 --> Undefined index: nama
 #6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2021-01-31 07:23:25 --> Undefined variable: title
+#0 C:\laragon\www\sinauflu\app\Views\template.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 5, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(257): CodeIgniter\View\View->render('template', Array, true)
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('tutorial', Array, true)
+#4 C:\laragon\www\sinauflu\app\Controllers\Home.php(15): view('tutorial')
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
