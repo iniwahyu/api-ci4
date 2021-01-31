@@ -249,7 +249,7 @@
                         <hr>
                         <h4>Pendukung - Data Rumah Sakit dan Kepolisian</h4>
                         <p>Url: https://pmb.masuk.id/sin/api/pendukung/</p>
-                        <p>Method: POST</p>
+                        <p>Method: GET</p>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -275,7 +275,7 @@
 
                         <h4>Pendukung - Data Rumah Sakit dan Kepolisian (Where)</h4>
                         <p>Url: https://pmb.masuk.id/sin/api/pendukung?jenis={jenis}</p>
-                        <p>Method: POST</p>
+                        <p>Method: GET</p>
                         <table class="table">
                             <thead>
                                 <tr>
