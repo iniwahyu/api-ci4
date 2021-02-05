@@ -59,6 +59,12 @@
                             <span class="link-title">Pendukung</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?php echo base_url('pelaporan'); ?>" class="nav-link">
+                            <i class="link-icon" data-feather="calendar"></i>
+                            <span class="link-title">Pelaporan</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

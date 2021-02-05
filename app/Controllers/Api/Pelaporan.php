@@ -20,7 +20,40 @@ class Pelaporan extends BaseController
     public function index()
     {
         // Data Pelaporan
-        $pelaporan          = $this->pelaporan->orderBy('id', 'desc')->get()->getResultArray();
+        $pelaporan          = $this->pelaporan->select('fullname, phone, image, lokasi, latitude, longitude, pelaporan.created_at')->join('auth', 'auth.id = pelaporan.id_user', 'left')->orderBy('pelaporan.id', 'desc')->get()->getResultArray();
+
+        // Check Pelaporan
+        if($pelaporan != null)
+        {
+            $response = [
+                'status'    => true,
+                'code'      => 200,
+                'message'   => 'Data Tersedia',
+                'data'      => $pelaporan,
+            ];
+        }
+        else
+        {
+            $response = [
+                'status'    => false,
+                'code'      => 404,
+                'message'   => 'Data Belum Tersedia',
+            ];
+        }
+
+        // Return
+        return $this->response->setJSON($response);
+    }
+
+    public function user($idUser = null)
+    {
+        // Data Pelaporan
+        $pelaporan          = $this->pelaporan
+                                    ->select('fullname, phone, image, latitude, longitude, lokasi, pelaporan.created_at')
+                                    ->join('auth', 'auth.id = pelaporan.id_user')
+                                    ->where(['pelaporan.id_user' => $idUser])
+                                    ->orderBy('pelaporan.id', 'desc')
+                                    ->get()->getResultArray();
 
         // Check Pelaporan
         if($pelaporan != null)
@@ -55,6 +88,7 @@ class Pelaporan extends BaseController
 
         // Change Name
         $imageName  = uuidv4().".".$image->getClientExtension();
+        // $imageName  = uuidv4()."-".$image->getClientName();
 
         // Insert Table Pelaporan
         $dataPelaporan = [
@@ -67,14 +101,15 @@ class Pelaporan extends BaseController
         $this->pelaporan->insert($dataPelaporan);
 
         // Move File to Folder
-        $image->move('/assets/pelaporan/', $imageName);
+        $image->move('assets/pelaporan/', $imageName);
+        // $image->move(WRIEPATH . 'assets/pelaporan/', $imageName);
 
         // Response
         $response   = [
             'status'    => true,
             'code'      => 200,
             'message'   => 'Berhasil Masuk',
-            'data'      => $user,
+            'data'      => $dataPelaporan,
         ];
 
         // Return

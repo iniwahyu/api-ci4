@@ -1,0 +1,62 @@
+CRITICAL - 2021-02-05 00:13:36 --> Invalid file: pelaporan/index.php
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pelaporan/index...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pelaporan/index', Array, true)
+#2 C:\laragon\www\sinauflu\app\Controllers\Pelaporan.php(27): view('pelaporan/index', Array)
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pelaporan->index()
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelaporan))
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-02-05 00:14:46 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pelaporan\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pelaporan/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pelaporan.php(27): view('pelaporan/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pelaporan->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelaporan))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-05 00:14:47 --> Undefined variable: pendukung
+#0 C:\laragon\www\sinauflu\app\Views\pelaporan\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 26, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\View\View.php(246): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('pelaporan/index', Array, true)
+#3 C:\laragon\www\sinauflu\app\Controllers\Pelaporan.php(27): view('pelaporan/index', Array)
+#4 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Pelaporan->index()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelaporan))
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-02-05 00:37:06 --> Column 'id' in order clause is ambiguous
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `fullnam...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fullnam...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fullnam...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `fullnam...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->user('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-05 00:39:55 --> Column 'created_at' in field list is ambiguous
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `fullnam...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fullnam...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fullnam...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `fullnam...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->user('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-05 00:41:32 --> Column 'id' in order clause is ambiguous
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `fullnam...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fullnam...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fullnam...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `fullnam...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->index()
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
