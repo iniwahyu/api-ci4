@@ -20,7 +20,7 @@ class Pelaporan extends BaseController
     public function index()
     {
         // Data Pelaporan
-        $pelaporan          = $this->pelaporan->select('fullname, phone, image, lokasi, latitude, longitude, pelaporan.created_at')->join('auth', 'auth.id = pelaporan.id_user', 'left')->orderBy('pelaporan.id', 'desc')->get()->getResultArray();
+        $pelaporan          = $this->pelaporan->select('pelaporan.id, fullname, phone, image, lokasi, latitude, longitude, status, pelaporan.created_at')->join('auth', 'auth.id = pelaporan.id_user', 'left')->orderBy('pelaporan.id', 'desc')->get()->getResultArray();
 
         // Check Pelaporan
         if($pelaporan != null)
@@ -110,6 +110,62 @@ class Pelaporan extends BaseController
             'code'      => 200,
             'message'   => 'Berhasil Masuk',
             'data'      => $dataPelaporan,
+        ];
+
+        // Return
+        return $this->response->setJSON($response);
+    }
+
+    public function show($idPelaporan = null)
+    {
+        if ($idPelaporan != null)
+        {
+            $pelaporan = $this->pelaporan->where(['id' => $idPelaporan])->get()->getRowArray();
+            if ($pelaporan != null)
+            {
+                $response = [
+                    'status'    => true,
+                    'code'      => 200,
+                    'message'   => 'Data Tersedia',
+                    'data'      => $pelaporan,
+                ];
+            }
+            else
+            {
+                $response = [
+                    'status'    => false,
+                    'code'      => 404,
+                    'message'   => 'Data Belum Tersedia',
+                ];
+            }
+        }
+        else
+        {
+            $response = [
+                'status'    => false,
+                'code'      => 404,
+                'message'   => 'Data Belum Tersedia',
+            ];
+        }
+
+        // Return
+        return $this->response->setJSON($response);
+    }
+
+    public function update($idPelaporan = null)
+    {
+        $post = $this->request->getVar();
+        $data = [
+            'lokasi'        => $post['lokasi'],
+            'status'        => $post['status'],
+        ];
+        $this->pelaporan->set($data)->where(['id' => $idPelaporan])->update();
+
+        $response = [
+            'status'    => true,
+            'code'      => 200,
+            'message'   => 'Berhasil Update Data',
+            'data'      => $data,
         ];
 
         // Return

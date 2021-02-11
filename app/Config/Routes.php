@@ -27,7 +27,7 @@ $routes->setAutoRoute(true);
  * API - AUTH
  * --------------------------------------------------------------------
  */
-$routes->get('/api/user', 'Api\Auth::user');
+// $routes->get('/api/user', 'Api\Auth::user');
 $routes->post('/api/signin', 'Api\Auth::signin');
 $routes->post('/api/signup', 'Api\Auth::signup');
 $routes->get('/api/profil/(:any)', 'Api\Auth::profil/$1');

@@ -1,0 +1,6 @@
+CRITICAL - 2021-02-11 13:51:41 --> Too few arguments to function App\Controllers\Api\User::show(), 0 passed in C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\User->show()
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
