@@ -113,8 +113,6 @@ class Pendukung extends BaseController
         $datapendukung = [
             'nama'          => $post['nama'],
             'alamat'        => $post['alamat'],
-            'latitude'      => $post['latitude'],
-            'longitude'     => $post['longitude'],
             'jenis'         => $post['jenis'], // Rumah Sakit/Kepolisian
         ];
         $this->pendukung->set($datapendukung)->where(['id' => $idPendukung])->update($datapendukung);
@@ -134,5 +132,29 @@ class Pendukung extends BaseController
     public function delete($idPendukung = null)
     {
         $this->pelaporan->where(['id' => $idPendukung])->delete();
+    }
+
+    public function show($idPendukung = null)
+    {
+        if ($idPendukung != null)
+        {
+            $pendukung       = $this->pendukung->where(['id' => $idPendukung])->get()->getRowArray();
+            $response = [
+                'status'    => true,
+                'code'      => 200,
+                'message'   => 'Data Tersedia',
+                'data'      => $pendukung,
+            ];
+        }
+        else
+        {
+            $response = [
+                'status'    => false,
+                'code'      => 404,
+                'message'   => 'Data Belum Tersedia',
+            ];
+        }
+
+        return $this->response->setJSON($response);
     }
 }

@@ -171,4 +171,27 @@ class Pelaporan extends BaseController
         // Return
         return $this->response->setJSON($response);
     }
+
+    public function delete($idPelaporan = null)
+    {
+        if ($idPelaporan != null)
+        {
+            $this->pelaporan->where(['id' => $idPelaporan])->delete();
+            $response = [
+                'status'    => true,
+                'code'      => 200,
+                'message'   => 'Berhasil Hapus',
+            ];
+        }
+        else
+        {
+            $response = [
+                'status'    => false,
+                'code'      => 404,
+                'message'   => 'Data Belum Tersedia',
+            ];
+        }
+
+        return $this->response->setJSON($response);
+    }
 }

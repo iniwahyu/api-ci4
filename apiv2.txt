@@ -1,0 +1,52 @@
+-- USER --
+GET USER
+https://pmb.masuk.id/sin/api/user
+
+INSERT USER
+https://pmb.masuk.id/sin/api/user/store
+- fullname
+- phone
+- password
+
+UPDATE USER
+https://pmb.masuk.id/sin/api/user/update/{id}
+https://pmb.masuk.id/sin/api/user/update/1
+- fullname
+- password (Tidak Wajib diisi, bisa dikosongkan)
+
+DELETE USER
+https://pmb.masuk.id/sin/api/user/delete/{id}
+https://pmb.masuk.id/sin/api/user/delete/1
+
+DETAIL USER
+https://pmb.masuk.id/sin/api/user/show/{id}
+https://pmb.masuk.id/sin/api/user/show/1
+
+-- PELAPORAN --
+GET PELAPORAN
+https://pmb.masuk.id/sin/api/pelaporan
+
+DETAIL PELAPORAN
+https://pmb.masuk.id/sin/api/pelaporan/show/{id}
+
+DELETE PELAPORAN
+https://pmb.masuk.id/sin/api/pelaporan/delete/{id}
+https://pmb.masuk.id/sin/api/pelaporan/delete/1
+
+-- PENDUKUNG --
+GET PENDUKUNG
+https://pmb.masuk.id/sin/api/pendukung
+
+GET PENDUKUNG BERDASARKAN JENIS
+https://pmb.masuk.id/sin/api/pendukung?jenis={jenis}
+https://pmb.masuk.id/sin/api/pendukung?jenis=POLISI
+https://pmb.masuk.id/sin/api/pendukung?jenis=RS
+
+DETAIL PENDUKUNG
+https://pmb.masuk.id/sin/api/pendukung/show/{id}
+
+UPDATE PENDUKUNG
+https://pmb.masuk.id/sin/api/pendukung/update/{id}
+- nama
+- alamat
+- jenis

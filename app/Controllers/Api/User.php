@@ -45,6 +45,32 @@ class User extends BaseController
         return $this->response->setJSON($response);
     }
 
+    public function store()
+    {
+        // Request
+        $post       = $this->request->getVar();
+
+        // Insert table users
+        $dataSignup = [
+            'fullname'          => $this->request->getVar('fullname'),
+            'phone'             => $this->request->getVar('phone'),
+            'password'          => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
+            'sandi'             => $this->request->getVar('password'),
+        ];
+        $this->auth->insert($dataSignup);
+
+        // Response
+        $response = [
+            'status'    => true,
+            'code'      => 200,
+            'message'   => 'Berhasil Mendaftar',
+            'data'      => $dataSignup,
+        ];
+        
+        // Return
+        return $this->response->setJSON($response);
+    }
+
     public function show($idUser = null)
     {
         if ($idUser != null)
@@ -116,7 +142,7 @@ class User extends BaseController
         return $this->response->setJSON($response);
     }
 
-    public function delete($idUser)
+    public function delete($idUser = null)
     {
         if ($idUser != null)
         {
