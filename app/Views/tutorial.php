@@ -188,8 +188,21 @@
 
                 <hr>
                 <h4>Detail Pendukung</h4>
-                <p>Url: https://pmb.masuk.id/sin/api/pendukung/show/{jenis}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung/show/{id}</p>
                 <p>Url: https://pmb.masuk.id/sin/api/pendukung/show/1</p>
+                <p>Method: GET</p>
+
+                <hr>
+                <h3 class="bg-dark text-white p-2 my-3">Rawan</h3>
+                <hr>
+                <h4>Data Rawan</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/rawan</p>
+                <p>Method: GET</p>
+
+                <hr>
+                <h4>Detail Data Rawan</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/rawan/show/{id_pelaporan}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/rawan/show/1</p>
                 <p>Method: GET</p>
 
                 <hr>

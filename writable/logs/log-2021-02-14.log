@@ -74,3 +74,24 @@ CRITICAL - 2021-02-14 11:01:20 --> Unknown column 'auth.username' in 'field list
 #7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2021-02-14 12:31:40 --> Undefined variable: route
+#0 C:\laragon\www\sinauflu\app\Config\Routes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-14 12:31:41 --> Undefined variable: route
+#0 C:\laragon\www\sinauflu\app\Config\Routes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-14 12:31:48 --> Undefined variable: route
+#0 C:\laragon\www\sinauflu\app\Config\Routes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 38, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(780): require('C:\\laragon\\www\\...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

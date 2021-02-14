@@ -229,4 +229,42 @@ class Pelaporan extends BaseController
         // Return
         return $this->response->setJSON($response);
     }
+
+    public function rawan()
+    {
+        // Data Pelaporan
+        $pelaporan          = $this->pelaporan
+                            ->select('*')
+                            ->where(['status' => 'Rawan'])
+                            ->orderBy('pelaporan.id', 'desc')
+                            ->get()->getResultArray();
+        $response = [
+        'status'    => true,
+        'code'      => 200,
+        'message'   => 'Data Tersedia',
+        'data'      => $pelaporan,
+        ];
+
+        // Return
+        return $this->response->setJSON($response);
+    }
+
+    public function rawanShow($idPelaporan = null)
+    {
+        // Data Pelaporan
+        $pelaporan          = $this->pelaporan
+                                    ->select('*')
+                                    ->where(['status' => 'Rawan', 'id' => $idPelaporan])
+                                    ->orderBy('pelaporan.id', 'desc')
+                                    ->get()->getRowArray();
+        $response = [
+            'status'    => true,
+            'code'      => 200,
+            'message'   => 'Data Tersedia',
+            'data'      => $pelaporan,
+        ];
+
+        // Return
+        return $this->response->setJSON($response);
+    }
 }
