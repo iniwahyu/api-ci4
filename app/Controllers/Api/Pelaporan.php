@@ -20,7 +20,7 @@ class Pelaporan extends BaseController
     public function index()
     {
         // Data Pelaporan
-        $pelaporan          = $this->pelaporan->select('pelaporan.id, fullname, phone, image, lokasi, latitude, longitude, status, pelaporan.created_at')->join('auth', 'auth.id = pelaporan.id_user', 'left')->orderBy('pelaporan.id', 'desc')->get()->getResultArray();
+        $pelaporan          = $this->pelaporan->select('auth.fullname, pelaporan.*')->join('auth', 'auth.id = pelaporan.id_user', 'left')->orderBy('pelaporan.id', 'desc')->get()->getResultArray();
 
         // Check Pelaporan
         if($pelaporan != null)
@@ -49,7 +49,7 @@ class Pelaporan extends BaseController
     {
         // Data Pelaporan
         $pelaporan          = $this->pelaporan
-                                    ->select('fullname, phone, image, latitude, longitude, lokasi, pelaporan.created_at')
+                                    ->select('auth.fullname, pelaporan.*')
                                     ->join('auth', 'auth.id = pelaporan.id_user')
                                     ->where(['pelaporan.id_user' => $idUser])
                                     ->orderBy('pelaporan.id', 'desc')
@@ -157,7 +157,7 @@ class Pelaporan extends BaseController
     {
         $post = $this->request->getVar();
         $data = [
-            'lokasi'        => $post['lokasi'],
+            // 'lokasi'        => $post['lokasi'],
             'status'        => $post['status'],
             'keterangan'    => $post['keterangan'],
         ];

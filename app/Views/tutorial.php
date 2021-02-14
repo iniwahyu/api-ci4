@@ -84,15 +84,24 @@
                 <hr>
                 <h4>Menampilkan Data Tiap User</h4>
                 <p>Url: https://pmb.masuk.id/sin/api/pelaporan/user/{id}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/user/1</p>
                 <p>Method: GET</p>
                 
                 <hr>
                 <h4>Menampilkan Data Tiap Ambulance</h4>
-                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/{id_ambulance atau id_user}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/{id}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/8001</p>
                 <p>Method: GET</p>
 
                 <hr>
-                <h4>Pelaporan - Lapor (Camera)</h4>
+                <h4>Menampilkan Data Detail Pelaporan</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/show/{id}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/show/1</p>
+                <p>Method: GET</p>
+                <p>Result</p>
+
+                <hr>
+                <h4>Lapor (Camera)</h4>
                 <p>Url: https://pmb.masuk.id/sin/api/pelaporan/lapor</p>
                 <p>Method: POST</p>
                 <table class="table">
@@ -131,6 +140,40 @@
                 </table>
 
                 <hr>
+                <h4>Update Data Pelaporan</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/update/{id}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/update/1</p>
+                <p>Method: PUT / POST (BEBAS, tapi sih prefer PUT. Serah ding, backendnya aja gaada aturan gituan wkwk) </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>id</th>
+                            <td>Integer (id pelaporan)</td>
+                        </tr>
+                        <tr>
+                            <th>status</th>
+                            <td>String - Pilihan Dropdown (Rawan / Tidak <s>Pe</s>Rawan)</td>
+                        </tr>
+                        <tr>
+                            <th>keterangan</th>
+                            <td>String - Pilihan Dropdown (Dengan Ambulance / Tanpa Ambulance)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+                <h4>Hapus Data Pelaporan</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/delete/{id}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/delete/1</p>
+                <p>Method: - </p>
+
+                <hr>
                 <h4>Profil - Detail Data Diri/Show Data Diri</h4>
                 <p>Url: https://pmb.masuk.id/sin/api/profil/{id}</p>
                 <p>Method: GET</p>
@@ -150,7 +193,8 @@
                 </table>
 
                 <hr>
-                <h4>Profil - Ubah Data Diri</h4>
+                <h3 class="bg-dark text-white p-2 my-3">Profil</h3>
+                <h4>Ubah Data Diri</h4>
                 <p>Url: https://pmb.masuk.id/sin/api/profil/update/{id}</p>
                 <p>Method: POST</p>
                 <table class="table">
