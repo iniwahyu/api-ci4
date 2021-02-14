@@ -196,4 +196,37 @@ class Pelaporan extends BaseController
 
         return $this->response->setJSON($response);
     }
+
+    public function ambulance($idAmbulance = null)
+    {
+        // Data Pelaporan
+        $pelaporan          = $this->pelaporan
+                                    ->select('auth.id AS id_ambulance, auth.fullname, fullname, phone, image, latitude, longitude, lokasi, lokasi_tambahan, status, keterangan, pelaporan.created_at')
+                                    ->join('auth', 'auth.id = pelaporan.id_ambulance')
+                                    ->where(['pelaporan.id_ambulance' => $idAmbulance])
+                                    ->orderBy('pelaporan.id', 'desc')
+                                    ->get()->getResultArray();
+
+        // Check Pelaporan
+        if($pelaporan != null)
+        {
+            $response = [
+                'status'    => true,
+                'code'      => 200,
+                'message'   => 'Data Tersedia',
+                'data'      => $pelaporan,
+            ];
+        }
+        else
+        {
+            $response = [
+                'status'    => false,
+                'code'      => 404,
+                'message'   => 'Data Belum Tersedia',
+            ];
+        }
+
+        // Return
+        return $this->response->setJSON($response);
+    }
 }

@@ -5,3 +5,72 @@ CRITICAL - 2021-02-14 03:32:37 --> Undefined variable: dataSignup
 #3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2021-02-14 11:00:43 --> Undefined variable: idUser
+#0 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 206, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-14 11:00:48 --> Undefined variable: idUser
+#0 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 206, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-02-14 11:00:49 --> Unknown column 'auth.username' in 'field list'
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `auth`.`...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auth`.`...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auth`.`...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `auth`.`...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(208): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-14 11:00:49 --> Unknown column 'auth.username' in 'field list'
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `auth`.`...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auth`.`...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auth`.`...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `auth`.`...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(208): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-14 11:01:20 --> Unknown column 'auth.username' in 'field list'
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `auth`.`...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auth`.`...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auth`.`...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `auth`.`...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(208): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-14 11:01:20 --> Unknown column 'auth.username' in 'field list'
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `auth`.`...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auth`.`...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auth`.`...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `auth`.`...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(208): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-02-14 11:01:20 --> Unknown column 'auth.username' in 'field list'
+#0 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT `auth`.`...')
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `auth`.`...')
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `auth`.`...')
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT `auth`.`...', Array, false)
+#4 C:\laragon\www\sinauflu\app\Controllers\Api\Pelaporan.php(208): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\Pelaporan->ambulance('19')
+#6 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Pelaporan))
+#7 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
