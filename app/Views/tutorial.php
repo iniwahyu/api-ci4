@@ -174,23 +174,23 @@
                 <p>Method: - </p>
 
                 <hr>
-                <h4>Profil - Detail Data Diri/Show Data Diri</h4>
-                <p>Url: https://pmb.masuk.id/sin/api/profil/{id}</p>
+                <h3 class="bg-dark text-white p-2 my-3">Pendukung</h3>
+                <h4>Data Rumah Sakit dan Kepolisian</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung/index</p>
                 <p>Method: GET</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Key</th>
-                            <th scope="col">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>id</th>
-                            <td>Integer (Pake Sharedpreferences after Login)</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+                <hr>
+                <h4>Data Rumah Sakit dan Kepolisian (Where)</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung?jenis={jenis}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung?jenis=RS</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung?jenis=POLISI</p>
+                <p>Method: GET</p>
+
+                <hr>
+                <h4>Detail Pendukung</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung/show/{jenis}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pendukung/show/1</p>
+                <p>Method: GET</p>
 
                 <hr>
                 <h3 class="bg-dark text-white p-2 my-3">Profil</h3>
@@ -216,6 +216,25 @@
                         <tr>
                             <th>phone</th>
                             <td>String</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+                <h4>Detail Data Diri/Show Data Diri</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/profil/{id}</p>
+                <p>Method: GET</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>id</th>
+                            <td>Integer (Pake Sharedpreferences after Login)</td>
                         </tr>
                     </tbody>
                 </table>
@@ -267,57 +286,7 @@
                 </table>
 
                 <hr>
-                <h4>Pendukung - Data Rumah Sakit dan Kepolisian</h4>
-                <p>Url: https://pmb.masuk.id/sin/api/pendukung/</p>
-                <p>Method: GET</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Key</th>
-                            <th scope="col">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>nama</th>
-                            <td>Integer (Pake Sharedpreferences after Login)</td>
-                        </tr>
-                        <tr>
-                            <th>alamat</th>
-                            <td>String</td>
-                        </tr>
-                        <tr>
-                            <th>jenis</th>
-                            <td>String</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h4>Pendukung - Data Rumah Sakit dan Kepolisian (Where)</h4>
-                <p>Url: https://pmb.masuk.id/sin/api/pendukung?jenis={jenis}</p>
-                <p>Method: GET</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Key</th>
-                            <th scope="col">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>nama</th>
-                            <td>Integer (Pake Sharedpreferences after Login)</td>
-                        </tr>
-                        <tr>
-                            <th>alamat</th>
-                            <td>String</td>
-                        </tr>
-                        <tr>
-                            <th>jenis</th>
-                            <td>Where = 'RS' / 'POLISI'</td>
-                        </tr>
-                    </tbody>
-                </table>
+                
             </div>
         </div>
     </div>
