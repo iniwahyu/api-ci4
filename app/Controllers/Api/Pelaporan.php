@@ -97,6 +97,7 @@ class Pelaporan extends BaseController
             'latitude'      => $post['latitude'],
             'longitude'     => $post['longitude'],
             'lokasi'        => $post['lokasi'],
+            'lokasi_tambahan'   => $post['lokasi_tambahan']
         ];
         $this->pelaporan->insert($dataPelaporan);
 
@@ -158,6 +159,7 @@ class Pelaporan extends BaseController
         $data = [
             'lokasi'        => $post['lokasi'],
             'status'        => $post['status'],
+            'keterangan'    => $post['keterangan'],
         ];
         $this->pelaporan->set($data)->where(['id' => $idPelaporan])->update();
 

@@ -1,0 +1,7 @@
+CRITICAL - 2021-02-14 03:32:37 --> Undefined variable: dataSignup
+#0 C:\laragon\www\sinauflu\app\Controllers\Api\User.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 57, Array)
+#1 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Api\User->ambulance()
+#2 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\User))
+#3 C:\laragon\www\sinauflu\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\sinauflu\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

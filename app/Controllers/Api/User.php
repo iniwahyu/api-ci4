@@ -45,6 +45,22 @@ class User extends BaseController
         return $this->response->setJSON($response);
     }
 
+    public function ambulance()
+    {
+        $user       = $this->auth->where(['level' => 'Ambulance'])->get()->getResultArray();
+
+        // Response
+        $response = [
+            'status'    => true,
+            'code'      => 200,
+            'message'   => 'Data Tersedia',
+            'data'      => $user,
+        ];
+        
+        // Return
+        return $this->response->setJSON($response);
+    }
+
     public function store()
     {
         // Request
