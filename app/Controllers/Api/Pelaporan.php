@@ -230,6 +230,25 @@ class Pelaporan extends BaseController
         return $this->response->setJSON($response);
     }
 
+    public function pesanAmbulance($idPelaporan = null)
+    {
+        $post = $this->request->getVar();
+        $data = [
+            'id_ambulance'      => $post['id_ambulance']
+        ];
+        $this->pelaporan->set($data)->where(['id' => $idPelaporan])->update();
+
+        $response = [
+            'status'    => true,
+            'code'      => 200,
+            'message'   => 'Berhasil Menambahkan Ambulance',
+            'data'      => $data,
+        ];
+
+        // Return
+        return $this->response->setJSON($response);
+    }
+
     public function rawan()
     {
         // Data Pelaporan

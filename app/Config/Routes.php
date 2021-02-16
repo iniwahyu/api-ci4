@@ -35,6 +35,8 @@ $routes->post('/api/profil/update/(:any)', 'Api\Auth::profilUpdate/$1');
 $routes->post('/api/profil/sandi/(:any)', 'Api\Auth::sandiUpdate/$1');
 $routes->post('/api/profil/identitas/(:any)', 'Api\Auth::identitas/$1');
 
+$routes->post('/api/pelaporan/ambulance/pesan/(:any)', 'Api\Pelaporan::pesanAmbulance/$1');
+
 $routes->get('/api/rawan/', 'Api\Pelaporan::rawan');
 $routes->get('/api/rawan/show/(:any)', 'Api\Pelaporan::rawanShow/$1');
 

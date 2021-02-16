@@ -86,12 +86,6 @@
                 <p>Url: https://pmb.masuk.id/sin/api/pelaporan/user/{id}</p>
                 <p>Url: https://pmb.masuk.id/sin/api/pelaporan/user/1</p>
                 <p>Method: GET</p>
-                
-                <hr>
-                <h4>Menampilkan Data Tiap Ambulance</h4>
-                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/{id}</p>
-                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/8001</p>
-                <p>Method: GET</p>
 
                 <hr>
                 <h4>Menampilkan Data Detail Pelaporan</h4>
@@ -206,6 +200,49 @@
                 <p>Method: GET</p>
 
                 <hr>
+                <h3 class="bg-dark text-white p-2 my-3">Ambulance</h3>
+                <hr>
+                <h4>Data Ambulance</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/user/ambulance</p>
+                <p>Method: GET</p>
+
+                <hr>
+                <h4>Menampilkan Data Tiap Ambulance</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/{id}</p>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/8001</p>
+                <p>Method: GET</p>
+
+                <hr>
+                <h4>Pesan Ambulance</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/pelaporan/ambulance/pesan/{id}</p>
+                <p>Method: PUT/POST</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Key</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>id</th>
+                            <td>Integer (id pelaporan)</td>
+                        </tr>
+                        <tr>
+                            <th>id_ambulance</th>
+                            <td>Integer</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+                <h3 class="bg-dark text-white p-2 my-3">Prosedur and Help</h3>
+                <hr>
+                <h4>Prosedur dan Help</h4>
+                <p>Url: https://pmb.masuk.id/sin/api/site/list</p>
+                <p>Method: GET</p>
+
+                <!-- <hr>
                 <h3 class="bg-dark text-white p-2 my-3">Profil</h3>
                 <h4>Ubah Data Diri</h4>
                 <p>Url: https://pmb.masuk.id/sin/api/profil/update/{id}</p>
@@ -298,7 +335,7 @@
                     </tbody>
                 </table>
 
-                <hr>
+                <hr> -->
                 
             </div>
         </div>
