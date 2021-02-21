@@ -17,6 +17,31 @@ class Notifikasi extends BaseController
         // Query Builder
     }
 
+    public function all()
+    {
+        $notifikasi     = $this->notifikasi->get()->getResultArray();
+        // Check Data
+        if($notifikasi != null)
+        {
+            $response = [
+                'status'    => true,
+                'code'      => 200,
+                'message'   => 'Data Tersedia',
+                'data'      => $notifikasi,
+            ];
+        }
+        else
+        {
+            $response = [
+                'status'    => false,
+                'code'      => 404,
+                'message'   => 'Data Belum Tersedia',
+            ];
+        }
+        // Return
+        return $this->response->setJSON($response);
+    }
+
     public function list($idUser = null)
     {
         // Data

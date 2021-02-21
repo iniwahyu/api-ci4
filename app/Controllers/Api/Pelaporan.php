@@ -14,6 +14,8 @@ class Pelaporan extends BaseController
         // Query Builder
         $this->db           = \Config\Database::connect();
         $this->pelaporan    = $this->db->table('pelaporan');
+        $this->notifikasi    = $this->db->table('notifikasi');
+        $this->auth    = $this->db->table('auth');
         // Query Builder
     }
 
@@ -244,6 +246,15 @@ class Pelaporan extends BaseController
             'message'   => 'Berhasil Menambahkan Ambulance',
             'data'      => $data,
         ];
+
+        $pelaporan = $this->pelaporan->where(['id' => $idPelaporan])->get()->getRowArray();
+        $user       = $this->auth->where(['id' => $post['id_ambulance']])->get()->getRowArray();
+
+        $dataNotifikasi = [
+            'id_user'       => $pelaporan['id_user'],
+            'keterangan'    => $user['fullname']." Sedang Dikirim Menuju Ketempat",
+        ];
+        $this->notifikasi->insert($dataNotifikasi);
 
         // Return
         return $this->response->setJSON($response);
